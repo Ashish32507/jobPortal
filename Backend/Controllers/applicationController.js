@@ -101,7 +101,7 @@ exports.getApplicant = async (req, res) => {
       path: "application",
       options: { sort: { createdAt: -1 } },
       populate: {
-        path: "applicant",
+        path: "Application",
       },
     });
 

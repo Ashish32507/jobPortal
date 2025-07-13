@@ -20,7 +20,7 @@ exports.register = async (req, res) => {
       });
     }
     console.log(file);
-    let cloudResponse = null;
+    let cloudResponse = "";
     if (file) {
       try {
         const fileUri = getDataUri(file);

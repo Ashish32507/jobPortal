@@ -9,8 +9,8 @@ const isAuthenticated = require("../middleware/isAuthenticated");
 const router = express.Router();
 
 router.post("/postjob", isAuthenticated, postJob);
-router.get("/getalljob", isAuthenticated, getAllJobs);
-router.get("/getjobbyid/:id", isAuthenticated, getJobById);
+router.get("/getalljob", getAllJobs);
+router.get("/getjobbyid/:id", getJobById);
 router.get("/getadminjob", isAuthenticated, getAdminJobs);
 
 module.exports = router;
